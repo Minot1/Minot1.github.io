@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import n00bzCTFpage from './n00bzCTFpage';
+import WriteupsPage from './WriteupsPage';
 
 function App() {
   return (
     <Routes>
-      <Route path='*' element={<n00bzCTFpage></n00bzCTFpage>}></Route>
+      <Route path='/' element={<WriteupsPage></WriteupsPage>}></Route>
     </Routes>
   );
 }
