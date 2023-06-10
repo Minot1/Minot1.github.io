@@ -1,16 +1,12 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import n00bzCTFpage from './n00bzCTFpage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Minot
-        </p>
-      </header>
-    </div>
+    <Routes>
+      <Route path='*' element={<n00bzCTFpage></n00bzCTFpage>}></Route>
+    </Routes>
   );
 }
 
