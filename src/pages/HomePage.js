@@ -1,14 +1,14 @@
 import React from 'react'
+import BasePage from '../components/BasePage'
 
 function HomePage() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <BasePage>
         <p>
           Welcome
         </p>
-      </header>
-    </div>
+        <a href='/n00bz'>n00bzCTF2023 Writeups</a>
+    </BasePage>
   )
 }
 
