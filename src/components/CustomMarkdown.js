@@ -15,8 +15,6 @@ function CustomMarkdown({ path }) {
     return <img alt="" {...props} style={{ maxWidth: "100%" }} />;
   };
 
-  const MarkdownCode = (props) => {};
-
   return <ReactMarkdown rehypePlugins={[rehypeRaw]} components={{ img: MarkdownImage }} children={markdown}></ReactMarkdown>;
 }
 

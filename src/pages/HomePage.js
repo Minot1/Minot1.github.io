@@ -1,15 +1,18 @@
-import React from 'react'
-import BasePage from '../components/BasePage'
+import React from "react";
+import BasePage from "../components/BasePage";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
 
 function HomePage() {
+  const navigate = useNavigate();
+
   return (
     <BasePage>
-        <p>
-          Welcome
-        </p>
-        <a href='/n00bz'>n00bzCTF2023 Writeups</a>
+      <p>Welcome</p>
+      <Button onClick={() => navigate("/posts/n00bz-ctf-2023")}>n00bzCTF2023 Writeups</Button>
+      <a href="/posts/n00bz-ctf-2023">n00bzCTF2023 Writeups</a>
     </BasePage>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
