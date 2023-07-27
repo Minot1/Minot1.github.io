@@ -10,7 +10,6 @@ function HomePage() {
     <BasePage>
       <p>Welcome</p>
       <Button onClick={() => navigate("/posts/n00bz-ctf-2023")}>n00bzCTF2023 Writeups</Button>
-      <a href="/posts/n00bz-ctf-2023">n00bzCTF2023 Writeups</a>
     </BasePage>
   );
 }

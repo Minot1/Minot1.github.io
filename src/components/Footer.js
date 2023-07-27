@@ -11,7 +11,6 @@ function Footer() {
           display: "flex",
           flexGrow: 1,
           flexDirection: "row",
-          backgroundColor: "#eeeeee",
           justifyContent: "center",
           p: 2,
           alignItems: "center",
