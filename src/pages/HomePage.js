@@ -8,8 +8,9 @@ function HomePage() {
 
   return (
     <BasePage>
-      <p>Welcome</p>
-      <Button onClick={() => navigate("/posts/n00bz-ctf-2023")}>n00bzCTF2023 Writeups</Button>
+      {/* <img src="https://tryhackme-badges.s3.amazonaws.com/minot.png" alt="TryHackMe"></img> */}
+      {/* <p>Welcome</p> */}
+      {/* <Button onClick={() => navigate("/posts/n00bz-ctf-2023")}>n00bzCTF2023 Writeups</Button> */}
     </BasePage>
   );
 }
