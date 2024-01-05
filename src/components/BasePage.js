@@ -23,7 +23,7 @@ function BasePage({ children }) {
       <Box>
         <CustomAppBar></CustomAppBar>
         <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-          <div style={{ maxWidth: "45vw" }}>{children}</div>
+          <div style={{ maxWidth: "75vw" }}>{children}</div>
         </Box>
       </Box>
       <Footer />
