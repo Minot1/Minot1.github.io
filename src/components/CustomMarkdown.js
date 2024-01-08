@@ -15,7 +15,17 @@ function CustomMarkdown({ path }) {
     return <img alt="" {...props} style={{ maxWidth: "100%" }} />;
   };
 
-  return <ReactMarkdown rehypePlugins={[rehypeRaw]} components={{ img: MarkdownImage }} children={markdown}></ReactMarkdown>;
+  const MarkdownBlockquote = (props) => {
+    return <blockquote {...props} style={{ backgroundColor: "rgb(40, 40, 40)", padding: "0.5px", paddingLeft: "13px" }} />;
+  };
+
+  return (
+    <ReactMarkdown
+      rehypePlugins={[rehypeRaw]}
+      components={{ img: MarkdownImage, blockquote: MarkdownBlockquote }}
+      children={markdown}
+    ></ReactMarkdown>
+  );
 }
 
 export default CustomMarkdown;

@@ -10,15 +10,17 @@ function BasePage({ children }) {
       display="flex"
       flexDirection="column"
       justifyContent="space-between"
-      sx={{
-        backgroundImage: "url(/bgTheme.png)",
-        backgroundColor: "rgb(6, 0, 0)",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "repeat",
-        backgroundBlendMode: "screen",
-        overflowY: "auto",
-      }}
+      sx={
+        {
+          //backgroundImage: "url(/bgTheme.png)",
+          //backgroundColor: "rgb(25, 25, 25)",
+          //backgroundSize: "cover",
+          //backgroundAttachment: "fixed",
+          //backgroundRepeat: "repeat",
+          //backgroundBlendMode: "screen",
+          //overflowY: "auto",
+        }
+      }
     >
       <Box>
         <CustomAppBar></CustomAppBar>
