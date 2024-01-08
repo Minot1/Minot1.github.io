@@ -1,9 +1,9 @@
 
-# Iris CTF 2024
+# IrisCTF 2024 Writeup
 
 [CTFTime page](https://ctftime.org/event/2085)
 
-[Iris CTF 2024 Website](https://2024.irisc.tf/home)
+[IrisCTF 2024 Website](https://2024.irisc.tf/home)
 
 ### Table of Contents
 
