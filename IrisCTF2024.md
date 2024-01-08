@@ -13,7 +13,11 @@
 4. [WEB / What's My Password?](#web--whats-my-password)
 5. [RE / The Johnson's](#re--the-johnsons)
 
-## OSINT / Czech Where? <a name="osint--czech-where"></a>
+ <a name="osint--czech-where"></a>
+
+## OSINT / Czech Where?
+
+---
 
 ### Challenge
 
