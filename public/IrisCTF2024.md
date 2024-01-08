@@ -13,7 +13,7 @@
 4. [WEB / What's My Password?](#web--whats-my-password)
 5. [RE / The Johnson's](#re--the-johnsons)
 
- <a name="osint--czech-where"></a>
+ <a name="osint--czech-where"></a><br>
 
 ## OSINT / Czech Where?
 
@@ -42,7 +42,11 @@ We understand that this picture must have been taken either inside Prague Castle
 
 ### irisctf{zlata_ulicka_u_daliborky}
 
-## OSINT / Away on Vacation <a name="osint--away-on-vacation"></a>
+ <a name="osint--away-on-vacation"></a><br>
+
+## OSINT / Away on Vacation
+
+---
 
 ### Challenge
 
@@ -64,7 +68,11 @@ https://www.instagram.com/michelangelo_corning/
 
 ### irisctf{pub1ic_4cc0unt5_4r3_51tt1ng_duck5}
 
-## OSINT / Personal Breach <a name="osint--personal-breach"></a>
+ <a name="osint--personal-breach"></a><br>
+
+## OSINT / Personal Breach
+
+---
 
 ### Challenge
 
@@ -110,7 +118,11 @@ When we enter these three information to the attached website, we get the flag:
 
 ### irisctf{s0c1al_m3d1a_1s_an_1nf3cti0n}
 
-## WEB / What's My Password? <a name="web--whats-my-password"></a>
+ <a name="web--whats-my-password"></a><br>
+
+## WEB / What's My Password?
+
+---
 
 ### Challenge
 
@@ -156,7 +168,11 @@ which gave the flag:
 
 ### irisctf{my_p422W0RD_1S_SQl1}
 
-## RE / The Johnson's <a name="re--the-johnsons"></a>
+ <a name="re--the-johnsons"></a><br>
+
+## RE / The Johnson's
+
+---
 
 ### Challenge
 
