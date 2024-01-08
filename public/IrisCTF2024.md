@@ -5,6 +5,14 @@
 
 [Iris CTF 2024 Website](https://2024.irisc.tf/home)
 
+### Table of Contents
+
+1. [OSINT / Czech Where?](#osint--czech-where)
+2. [OSINT / Away on Vacation](#osint--away-on-vacation)
+3. [OSINT / Personal Breach](#osint--personal-breach)
+4. [WEB / What's My Password?](#web--whats-my-password)
+5. [RE / The Johnson's](#re--the-johnsons)
+
 ## OSINT / Czech Where?
 
 ### Challenge
