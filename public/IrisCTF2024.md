@@ -161,9 +161,28 @@ Before any reversing, I like to run the executable to see what it is. It asks fo
 
 However, after playing around a bit, I realized one color was missing because it asks for 4 different colors. I tried some and realized it is `red` and the reason why it didn't show up on `strings` was because it is 3 characters. When we enter these colors and foods, we get: `Incorrect`. There must be an order to enter.
 
-Time to reverse and open Ghidra!
+Time to reverse and open Ghidra! After the auto-analysis, I tried to understand the main function and the function called `check`. Here are my findings from reading the code:
+- Colors and foods are given numbers, encoded in a manner, in the following way:
+  > red			1\
+	> blue		2\
+	> 	green		3\
+		yellow	4\
+        pizza			1\
+		pasta			2\
+		steak			3\
+		chicken			4
+- `check` function puts some logical limits for the results to be true:
+    > First color is not green\
+    Second color is not red, nor green\
+    Third color is not yellow\
+    Forth color is blue
 
+    > First food is chicken\
+    No clue about second food\
+    Third food is not pasta\
+    Forth food is not steak, nor pasta
 
+So this is a simple logic puzzle. When you solve it and find the correct order, you get the flag:
 
 ### irisctf{m0r3_th4n_0n3_l0g1c_puzzl3_h3r3}
 
