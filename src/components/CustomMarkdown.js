@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import rehypeRaw from "rehype-raw";
+import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 function CustomMarkdown({ path }) {
   const [markdown, setMarkdown] = useState("");
@@ -22,7 +24,21 @@ function CustomMarkdown({ path }) {
   return (
     <ReactMarkdown
       rehypePlugins={[rehypeRaw]}
-      components={{ img: MarkdownImage, blockquote: MarkdownBlockquote }}
+      components={{
+        img: MarkdownImage,
+        blockquote: MarkdownBlockquote,
+        code(props) {
+          const { children, className, node, ...rest } = props;
+          const match = /language-(\w+)/.exec(className || "");
+          return match ? (
+            <SyntaxHighlighter {...rest} PreTag="div" children={String(children).replace(/\n$/, "")} language={match[1]} style={darcula} />
+          ) : (
+            <code {...rest} className={className}>
+              {children}
+            </code>
+          );
+        },
+      }}
       children={markdown}
     ></ReactMarkdown>
   );
