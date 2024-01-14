@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import BasePage from "../components/BasePage";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import PostCard from "../components/PostCard";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -113,14 +114,15 @@ function HomePage() {
             </Card>
           </Grid>
         </Grid>
-        <Grid item>
-          <Typography>Posts</Typography>
-          <Grid></Grid>
+        <Grid item container justifyContent="center">
+          <Grid item>
+            <PostCard title="HTB Bizness - Writeup" postMedia="/HTB/Bizness/box_logo.png" postUrl="/htb-bizness"></PostCard>
+          </Grid>
+          <Grid item>
+            <PostCard title="Iris CTF 2024 - Writeup" postMedia="/iris_ctf_logo.png" postUrl="/iris-ctf-2024"></PostCard>
+          </Grid>
         </Grid>
       </Grid>
-      {/* <img src="https://tryhackme-badges.s3.amazonaws.com/minot.png" alt="TryHackMe"></img> */}
-      {/* <p>Welcome</p> */}
-      {/* <Button onClick={() => navigate("/posts/n00bz-ctf-2023")}>n00bzCTF2023 Writeups</Button> */}
     </BasePage>
   );
 }
