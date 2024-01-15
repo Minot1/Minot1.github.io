@@ -34,9 +34,6 @@ function HomePage() {
                   <li>
                     <Typography>Participates in CTFs regularly</Typography>
                   </li>
-                  <li>
-                    <Typography>Currently preparing for eCPPTv2 certificate</Typography>
-                  </li>
                 </ul>
               </CardContent>
             </Card>
