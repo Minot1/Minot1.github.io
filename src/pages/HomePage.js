@@ -116,10 +116,13 @@ function HomePage() {
         </Grid>
         <Grid item container justifyContent="center">
           <Grid item>
+            <PostCard title="UofT CTF 2024 - Writeup" postMedia="/CTF/UofT_CTF/uoft_ctf_logo.png" postUrl="/uoft-ctf-2024"></PostCard>
+          </Grid>
+          <Grid item>
             <PostCard title="HTB Bizness - Writeup" postMedia="/HTB/Bizness/box_logo.png" postUrl="/htb-bizness"></PostCard>
           </Grid>
           <Grid item>
-            <PostCard title="Iris CTF 2024 - Writeup" postMedia="/iris_ctf_logo.png" postUrl="/iris-ctf-2024"></PostCard>
+            <PostCard title="Iris CTF 2024 - Writeup" postMedia="/CTF/Iris_CTF/iris_ctf_logo.png" postUrl="/iris-ctf-2024"></PostCard>
           </Grid>
         </Grid>
       </Grid>
