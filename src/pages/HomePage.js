@@ -34,6 +34,9 @@ function HomePage() {
                   <li>
                     <Typography>Participates in CTFs regularly</Typography>
                   </li>
+                  <li>
+                    <Typography>Currently studying MSc Computing @ University of Northampton</Typography>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -112,6 +115,9 @@ function HomePage() {
           </Grid>
         </Grid>
         <Grid item container justifyContent="center">
+          <Grid item>
+            <PostCard title="Mapna CTF 2024 - Writeup" postMedia="/CTF/Mapna_CTF/mapna-logo.png" postUrl="/mapna-ctf-2024"></PostCard>
+          </Grid>
           <Grid item>
             <PostCard title="UofT CTF 2024 - Writeup" postMedia="/CTF/UofT_CTF/uoft_ctf_logo.png" postUrl="/uoft-ctf-2024"></PostCard>
           </Grid>
