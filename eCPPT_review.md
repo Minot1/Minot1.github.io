@@ -85,5 +85,5 @@ Last but not the least, a couple more suggestions:
 - Use a template for your report. I suggest using TCM Pentesting report template.
 - Do not worry to fail. You have a free retake!
 
-
+If you have any questions or just want to reach out to me, you can use the below links!
 
