@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import BiznessHtbWriteup from "./posts/BiznessHtbWriteup";
 import UofTCtfWriteup from "./posts/UofTCtfWriteup";
 import MapnaCtfWriteup from "./posts/MapnaCtfWriteup";
+import EcpptReview from "./posts/EcpptReview";
 
 const GA_TRACKING_ID = "G-B7BSRPYFZL";
 ReactGA.initialize(GA_TRACKING_ID);
@@ -23,6 +24,7 @@ function App() {
       <Route path="/htb-bizness" element={<BiznessHtbWriteup></BiznessHtbWriteup>}></Route>
       <Route path="/uoft-ctf-2024" element={<UofTCtfWriteup></UofTCtfWriteup>}></Route>
       <Route path="/mapna-ctf-2024" element={<MapnaCtfWriteup></MapnaCtfWriteup>}></Route>
+      <Route path="/ecppt-review" element={<EcpptReview></EcpptReview>}></Route>
     </Routes>
   );
 }
