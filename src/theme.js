@@ -1,10 +1,11 @@
 import { createTheme } from "@mui/material";
+import { COLORS } from "./pages/colors";
 
 const theme = createTheme({
   palette: {
     mode: "dark",
     background: {
-      default: "rgb(25, 25, 25)",
+      default: COLORS.appBgColor,
     },
     text: {
       primary: "rgb(230, 230, 230)",
@@ -14,7 +15,6 @@ const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: "rgb(32, 0, 0)",
           boxShadow: "none",
         },
       },

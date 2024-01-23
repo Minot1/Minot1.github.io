@@ -14,16 +14,31 @@ ReactGA.initialize(GA_TRACKING_ID);
 
 function App() {
   useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+    });
   }, []);
 
   return (
     <Routes>
       <Route path="/" element={<HomePage></HomePage>}></Route>
-      <Route path="/iris-ctf-2024" element={<IrisCtfWriteup></IrisCtfWriteup>}></Route>
-      <Route path="/htb-bizness" element={<BiznessHtbWriteup></BiznessHtbWriteup>}></Route>
-      <Route path="/uoft-ctf-2024" element={<UofTCtfWriteup></UofTCtfWriteup>}></Route>
-      <Route path="/mapna-ctf-2024" element={<MapnaCtfWriteup></MapnaCtfWriteup>}></Route>
+      <Route
+        path="/iris-ctf-2024"
+        element={<IrisCtfWriteup></IrisCtfWriteup>}
+      ></Route>
+      <Route
+        path="/htb-bizness"
+        element={<BiznessHtbWriteup></BiznessHtbWriteup>}
+      ></Route>
+      <Route
+        path="/uoft-ctf-2024"
+        element={<UofTCtfWriteup></UofTCtfWriteup>}
+      ></Route>
+      <Route
+        path="/mapna-ctf-2024"
+        element={<MapnaCtfWriteup></MapnaCtfWriteup>}
+      ></Route>
       <Route path="/ecppt-review" element={<EcpptReview></EcpptReview>}></Route>
     </Routes>
   );

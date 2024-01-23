@@ -1,8 +1,19 @@
 import React, { useEffect, useState } from "react";
 import BasePage from "../components/BasePage";
 import { useNavigate } from "react-router-dom";
-import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Card,
+  CardActionArea,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Grid,
+  Typography,
+} from "@mui/material";
 import PostCard from "../components/PostCard";
+import { COLORS } from "./colors";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -13,7 +24,13 @@ function HomePage() {
       <Grid container direction="column" m={2}>
         <Grid container item m={1} direction="row" spacing={2}>
           <Grid item xs={7}>
-            <Card sx={{ display: "flex", padding: 2, backgroundColor: "rgb(32, 0, 0)" }} elevation={5}>
+            <Card
+              sx={{
+                display: "flex",
+                padding: 2,
+                backgroundColor: COLORS.cardBgColor,
+              }}
+            >
               <CardMedia
                 component="img"
                 sx={{ objectFit: "contain", width: "33%" }}
@@ -22,11 +39,13 @@ function HomePage() {
               ></CardMedia>
               <CardContent>
                 <Typography variant="h4" m={1} marginBottom={2}>
-                  Taner Dincer
+                  Tanpi Dincer
                 </Typography>
                 <ul>
                   <li>
-                    <Typography>Computer Science BSc degree @ Sabanci University</Typography>
+                    <Typography>
+                      Computer Science BSc degree @ Sabanci University
+                    </Typography>
                   </li>
                   <li>
                     <Typography>Passionate about cyber security</Typography>
@@ -35,14 +54,23 @@ function HomePage() {
                     <Typography>Participates in CTFs regularly</Typography>
                   </li>
                   <li>
-                    <Typography>Currently studying MSc Computing @ University of Northampton</Typography>
+                    <Typography>
+                      Currently studying MSc Computing @ University of
+                      Northampton
+                    </Typography>
                   </li>
                 </ul>
               </CardContent>
             </Card>
           </Grid>
           <Grid item xs={5}>
-            <Card sx={{ display: "flex", padding: 1, backgroundColor: "rgb(32, 0, 0)" }} elevation={5}>
+            <Card
+              sx={{
+                display: "flex",
+                padding: 1,
+                backgroundColor: COLORS.cardBgColor,
+              }}
+            >
               {showTextBasedCerts && (
                 <CardContent>
                   <Typography variant="h6" textAlign="center" marginBottom={1}>
@@ -50,19 +78,32 @@ function HomePage() {
                   </Typography>
                   <ul>
                     <li>
-                      <Typography>Cisco Verified - Introduction to Cybersecurity</Typography>
+                      <Typography>
+                        Cisco Verified - Introduction to Cybersecurity
+                      </Typography>
                     </li>
                     <li>
-                      <Typography>Cisco Verified - Networking Basics</Typography>
+                      <Typography>
+                        Cisco Verified - Networking Basics
+                      </Typography>
                     </li>
                     <li>
-                      <Typography>Cisco Verified - Networking Devices and Initial Configuration</Typography>
+                      <Typography>
+                        Cisco Verified - Networking Devices and Initial
+                        Configuration
+                      </Typography>
                     </li>
                     <li>
-                      <Typography>eLearnSecurity (INE) - Junior Penetration Tester Certificate</Typography>
+                      <Typography>
+                        eLearnSecurity (INE) - Junior Penetration Tester
+                        Certificate
+                      </Typography>
                     </li>
                     <li>
-                      <Typography>eLearnSecurity (INE) - Certified Professional Penetration Tester</Typography>
+                      <Typography>
+                        eLearnSecurity (INE) - Certified Professional
+                        Penetration Tester
+                      </Typography>
                     </li>
                   </ul>
                   <Box justifyContent="center" display="flex">
@@ -79,7 +120,11 @@ function HomePage() {
               {!showTextBasedCerts && (
                 <>
                   <CardContent>
-                    <Typography variant="h6" textAlign="center" marginBottom={1}>
+                    <Typography
+                      variant="h6"
+                      textAlign="center"
+                      marginBottom={1}
+                    >
                       Certificates
                     </Typography>
                     <Grid container direction="row">
@@ -87,10 +132,16 @@ function HomePage() {
                         <img src="/cisco_intro_to_cyber.png" width={100}></img>
                       </Grid>
                       <Grid item m={1}>
-                        <img src="/cisco_networking_basics.png" width={100}></img>
+                        <img
+                          src="/cisco_networking_basics.png"
+                          width={100}
+                        ></img>
                       </Grid>
                       <Grid item m={1}>
-                        <img src="/cisco_networking_devices_and_config.png" width={100}></img>
+                        <img
+                          src="/cisco_networking_devices_and_config.png"
+                          width={100}
+                        ></img>
                       </Grid>
                       <Grid item m={1}>
                         <img src="/eJPT.png" width={110}></img>
@@ -116,16 +167,32 @@ function HomePage() {
         </Grid>
         <Grid item container justifyContent="center">
           <Grid item>
-            <PostCard title="Mapna CTF 2024 - Writeup" postMedia="/CTF/Mapna_CTF/mapna-logo.png" postUrl="/mapna-ctf-2024"></PostCard>
+            <PostCard
+              title="Mapna CTF 2024 - Writeup"
+              postMedia="/CTF/Mapna_CTF/mapna-logo.png"
+              postUrl="/mapna-ctf-2024"
+            ></PostCard>
           </Grid>
           <Grid item>
-            <PostCard title="UofT CTF 2024 - Writeup" postMedia="/CTF/UofT_CTF/uoft_ctf_logo.png" postUrl="/uoft-ctf-2024"></PostCard>
+            <PostCard
+              title="UofT CTF 2024 - Writeup"
+              postMedia="/CTF/UofT_CTF/uoft_ctf_logo.png"
+              postUrl="/uoft-ctf-2024"
+            ></PostCard>
           </Grid>
           <Grid item>
-            <PostCard title="HTB Bizness - Writeup" postMedia="/HTB/Bizness/box_logo.png" postUrl="/htb-bizness"></PostCard>
+            <PostCard
+              title="HTB Bizness - Writeup"
+              postMedia="/HTB/Bizness/box_logo.png"
+              postUrl="/htb-bizness"
+            ></PostCard>
           </Grid>
           <Grid item>
-            <PostCard title="Iris CTF 2024 - Writeup" postMedia="/CTF/Iris_CTF/iris_ctf_logo.png" postUrl="/iris-ctf-2024"></PostCard>
+            <PostCard
+              title="Iris CTF 2024 - Writeup"
+              postMedia="/CTF/Iris_CTF/iris_ctf_logo.png"
+              postUrl="/iris-ctf-2024"
+            ></PostCard>
           </Grid>
         </Grid>
       </Grid>
