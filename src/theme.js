@@ -1,10 +1,11 @@
 import { createTheme } from "@mui/material";
+import COLORS from "./colors";
 
 const theme = createTheme({
   palette: {
     mode: "dark",
     background: {
-      default: "rgb(25, 25, 25)",
+      default: COLORS.appBgColor,
     },
     text: {
       primary: "rgb(230, 230, 230)",

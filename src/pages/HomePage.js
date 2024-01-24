@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import BasePage from "../components/BasePage";
-import { useNavigate } from "react-router-dom";
-import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import { Box, Button, Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import PostCard from "../components/PostCard";
+import COLORS from "../colors";
 
 function HomePage() {
-  const navigate = useNavigate();
   const [showTextBasedCerts, setShowTextBasedCerts] = useState(false);
 
   return (
@@ -13,7 +12,7 @@ function HomePage() {
       <Grid container direction="column" m={2}>
         <Grid container item m={1} direction="row" spacing={2}>
           <Grid item xs={7}>
-            <Card sx={{ display: "flex", padding: 2, backgroundColor: "rgb(32, 0, 0)" }} elevation={5}>
+            <Card sx={{ display: "flex", padding: 2, backgroundColor: COLORS.cardBgColor }}>
               <CardMedia
                 component="img"
                 sx={{ objectFit: "contain", width: "33%" }}
@@ -42,7 +41,7 @@ function HomePage() {
             </Card>
           </Grid>
           <Grid item xs={5}>
-            <Card sx={{ display: "flex", padding: 1, backgroundColor: "rgb(32, 0, 0)" }} elevation={5}>
+            <Card sx={{ display: "flex", padding: 1, backgroundColor: COLORS.cardBgColor }}>
               {showTextBasedCerts && (
                 <CardContent>
                   <Typography variant="h6" textAlign="center" marginBottom={1}>

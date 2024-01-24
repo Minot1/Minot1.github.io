@@ -2,6 +2,7 @@ import { Box, IconButton, SvgIcon, Typography } from "@mui/material";
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
+import COLORS from "../colors";
 
 function Footer() {
   return (
@@ -14,6 +15,7 @@ function Footer() {
           justifyContent: "center",
           p: 2,
           alignItems: "center",
+          backgroundColor: COLORS.footerBgColor,
         }}
       >
         <Typography variant="caption">Minot - 2023</Typography>

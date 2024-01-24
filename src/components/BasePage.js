@@ -1,27 +1,11 @@
 import React from "react";
 import CustomAppBar from "./CustomAppBar";
 import Footer from "./Footer";
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 
 function BasePage({ children }) {
   return (
-    <Box
-      height="100vh"
-      display="flex"
-      flexDirection="column"
-      justifyContent="space-between"
-      sx={
-        {
-          //backgroundImage: "url(/bgTheme.png)",
-          //backgroundColor: "rgb(25, 25, 25)",
-          //backgroundSize: "cover",
-          //backgroundAttachment: "fixed",
-          //backgroundRepeat: "repeat",
-          //backgroundBlendMode: "screen",
-          //overflowY: "auto",
-        }
-      }
-    >
+    <Box height="100vh" display="flex" flexDirection="column" justifyContent="space-between">
       <Box>
         <CustomAppBar></CustomAppBar>
         <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>

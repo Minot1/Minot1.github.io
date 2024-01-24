@@ -1,6 +1,6 @@
 ![HTB - Bizness](/HTB/Bizness/box_logo.png)
 
-# HTB - Bizness Writeup
+# HTB Bizness - Writeup
 
 [HTB website](https://app.hackthebox.com/machines/582)
 
