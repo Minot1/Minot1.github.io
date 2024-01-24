@@ -8,6 +8,8 @@ function EcpptReview() {
     <BasePage>
       <div>
         <Helmet>
+          <meta property="og:title" content="Minot" />
+          <meta property="og:description" content="eCPPT Review" />
           <meta property="og:image" content="/eCPPTv2.png" />
         </Helmet>
         <CustomMarkdown path="/eCPPT_review.md"></CustomMarkdown>
