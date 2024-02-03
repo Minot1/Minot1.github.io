@@ -9,10 +9,10 @@ function HomePage() {
 
   return (
     <BasePage>
-      <Grid container direction="column" m={2}>
+      <Grid container direction="column" m={1}>
         <Grid container item m={1} direction="row" spacing={2}>
           <Grid item xs={7}>
-            <Card sx={{ display: "flex", padding: 2, backgroundColor: COLORS.cardBgColor }}>
+            <Card sx={{ display: "flex", padding: 1, backgroundColor: COLORS.cardBgColor }}>
               <CardMedia
                 component="img"
                 sx={{ objectFit: "contain", width: "33%" }}
@@ -41,7 +41,7 @@ function HomePage() {
             </Card>
           </Grid>
           <Grid item xs={5}>
-            <Card sx={{ display: "flex", padding: 1, backgroundColor: COLORS.cardBgColor }}>
+            <Card sx={{ display: "flex", backgroundColor: COLORS.cardBgColor }}>
               {showTextBasedCerts && (
                 <CardContent>
                   <Typography variant="h6" textAlign="center" marginBottom={1}>
